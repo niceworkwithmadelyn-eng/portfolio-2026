@@ -18,9 +18,9 @@
 
 /* 1. Design tokens
    -------------------------------------------------------------------------- */
-   @font-face {
+  @font-face {
   font-family: "Palmetto";
-  src: url("D:\portfolio-2026\assets\fonts\Palmetto0.5DEMO.ttf") format("truetype");
+  src: url("../fonts/Palmetto0.5DEMO.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
