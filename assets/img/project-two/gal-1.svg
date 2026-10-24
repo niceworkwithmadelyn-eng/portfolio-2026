@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="Placeholder image">
+  <rect width="1200" height="1200" fill="#c6d0c4"/>
+  <rect x="48" y="48" width="1104" height="1104" fill="none" stroke="#1f1a1c" stroke-opacity="0.3" stroke-width="2"/>
+  <line x1="48" y1="48" x2="1152" y2="1152" stroke="#1f1a1c" stroke-opacity="0.14" stroke-width="2"/>
+  <line x1="1152" y1="48" x2="48" y2="1152" stroke="#1f1a1c" stroke-opacity="0.14" stroke-width="2"/>
+  <rect x="156.0" y="480.0" width="888" height="240" fill="#c6d0c4"/>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" fill="#1f1a1c" text-anchor="middle">
+    <text x="600.0" y="556.8" font-size="41" letter-spacing="1" opacity="0.7">PLACEHOLDER IMAGE</text>
+    <text x="600.0" y="624.0" font-size="55">project-two / gal-1</text>
+    <text x="600.0" y="686.4" font-size="34" opacity="0.7">1200 x 1200 px - replace this file with your own work</text>
+  </g>
+</svg>
