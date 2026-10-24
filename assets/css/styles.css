@@ -18,6 +18,13 @@
 
 /* 1. Design tokens
    -------------------------------------------------------------------------- */
+   @font-face {
+  font-family: "Palmetto";
+  src: url("D:\portfolio-2026\assets\fonts\Palmetto0.5DEMO.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   /* Colour: neutral ground, dark ink, two quiet accents.
      Text colours below all meet WCAG AA contrast on --bg and --wash. */
@@ -33,7 +40,7 @@
   /* Type: system font stacks, so nothing is downloaded and nothing is licensed.
      To use your own fonts, see the README ("Changing fonts"). */
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
-  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --sans: "Palmetto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* Space */
   --gutter: clamp(1.25rem, 4vw, 3rem);
