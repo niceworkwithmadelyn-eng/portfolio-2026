@@ -1,6 +1,5 @@
 # Portfolio website: edit, preview and deploy
 
-
 A static portfolio site for a graphic designer (branding, visual identity, packaging, editorial). It is plain HTML, CSS and a few lines of vanilla JavaScript. There is no database, no backend, no build step, no paid service and no third-party scripts or fonts.
 
 Everything in the site is a placeholder. Names, text, contact details and images are marked with `[square brackets]`, `yourdomain.com`, `your-username` or `YOUR-SITE.pages.dev` so you can find and replace them. No clients, awards, testimonials or results have been invented.
@@ -107,6 +106,10 @@ Images already use `loading="lazy"` and `decoding="async"`, and the project cove
 Write what the image shows, in one or two sentences, for someone who cannot see it. For example: "Wordmark in dark plum on an off-white label, shown on a glass jar." Do not start with "image of". If an image is purely decorative, use `alt=""`.
 
 Every placeholder currently reads "Placeholder: ... Replace with a description of your image." so it is obvious if one is left behind.
+
+### Work page filter
+
+`work.html` shows projects as a grid with filter buttons (All, Branding, Packaging, Editorial). Each project card has a `data-category` value, for example `data-category="packaging"`. A project can have several types separated by spaces (`data-category="branding packaging"`). To add or rename a filter, change the matching `data-filter` button and the `data-category` values so they use the same word. Without JavaScript the buttons are hidden and every project is shown. A link such as `work.html#packaging` opens the page already filtered.
 
 ### Social-sharing images
 

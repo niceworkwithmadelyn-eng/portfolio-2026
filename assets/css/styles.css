@@ -9,7 +9,7 @@
    4.  Layout helpers
    5.  Header and navigation
    6.  Home: hero, featured work, about, contact
-   7.  Work index
+   7.  Work page (filters and grid)
    8.  Inner page headers (About, Contact, 404)
    9.  Project pages
    10. Footer
@@ -421,6 +421,12 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .card__frame img,
+.card:focus-visible .card__frame img {
+  transform: scale(1.03);
 }
 
 .card__body {
@@ -479,65 +485,87 @@ h3 {
 }
 
 
-/* 7. Work index (work.html)
+/* 7. Work page: filters and project grid
    -------------------------------------------------------------------------- */
-.index {
-  list-style: none;
-  padding: 0;
+.work-section {
+  padding-bottom: var(--section);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 2rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--line);
 }
 
-.index__item {
-  border-top: 1px solid var(--line);
+/* The hidden attribute must win over the flex display above. */
+.filters[hidden] {
+  display: none;
 }
 
-.index__link {
+.filters__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filters__btn {
+  padding: 0.5rem 0;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+}
+
+.filters__btn:hover {
+  color: var(--ink);
+  border-bottom-color: currentColor;
+}
+
+.filters__btn[aria-pressed="true"] {
+  color: var(--plum);
+  border-bottom-color: var(--plum);
+}
+
+.work-grid {
   display: grid;
-  gap: 1rem;
-  padding-block: 1.75rem;
-  text-decoration: none;
+  gap: clamp(2.5rem, 5vw, 4rem) var(--gutter);
+  grid-template-columns: minmax(0, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.index__title {
-  font-family: var(--serif);
-  font-size: clamp(1.75rem, 4vw, 3rem);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+@media (min-width: 40rem) {
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-.index__meta {
+@media (min-width: 64rem) {
+  .work-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.work-grid__item[hidden] {
+  display: none;
+}
+
+.work-empty {
   color: var(--muted);
 }
 
-.index__thumb {
-  background: var(--wash);
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-}
-
-.index__thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.index__link:hover .index__title {
-  color: var(--plum);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.15em;
-}
-
-@media (min-width: 48rem) {
-  .index__link {
-    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) 4rem 13rem;
-    align-items: center;
-    column-gap: var(--gutter);
-  }
-
-  .index__thumb {
-    aspect-ratio: 4 / 3;
-  }
+.work-more {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
 }
 
 
