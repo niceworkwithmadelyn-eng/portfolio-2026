@@ -1,5 +1,6 @@
 # Portfolio website: edit, preview and deploy
 
+
 A static portfolio site for a graphic designer (branding, visual identity, packaging, editorial). It is plain HTML, CSS and a few lines of vanilla JavaScript. There is no database, no backend, no build step, no paid service and no third-party scripts or fonts.
 
 Everything in the site is a placeholder. Names, text, contact details and images are marked with `[square brackets]`, `yourdomain.com`, `your-username` or `YOUR-SITE.pages.dev` so you can find and replace them. No clients, awards, testimonials or results have been invented.
