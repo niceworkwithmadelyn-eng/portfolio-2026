@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# REPLACE with your real address after you deploy (see README).
-Sitemap: https://YOUR-SITE.pages.dev/sitemap.xml
