@@ -40,7 +40,7 @@
   /* Type: system font stacks, so nothing is downloaded and nothing is licensed.
      To use your own fonts, see the README ("Changing fonts"). */
   --serif: "Cownaffle", "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
-  --sans: "Cossette Titre", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --sans: "Xanh Mono", "Cossette Titre", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* Space */
   --gutter: clamp(1.25rem, 4vw, 3rem);
